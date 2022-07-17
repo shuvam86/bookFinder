@@ -20,6 +20,12 @@ function findBook() {
         success: function(book) {         //when we do ajax request the book data will be received in JSON format via this 'book' (in form of object)
             console.log(book);
             for (let i=0;i<book.items.length; i++) {
+            // var image= document.createElement('img');
+            // var line= document.createElement('hr');
+            // image.src= book.items[i].volumeInfo.imageLinks.thumbnail;
+            // document.getElementById('hm').appendChild(image);
+            // document.getElementById('hm').appendChild(line);
+
                 var image = document.createElement('img');
                 image.className = 'mr-3';
                 image.src = book.items[i].volumeInfo.imageLinks.thumbnail;
